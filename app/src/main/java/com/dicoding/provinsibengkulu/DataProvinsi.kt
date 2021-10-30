@@ -1,0 +1,49 @@
+package com.dicoding.provinsibengkulu
+
+import java.util.ArrayList
+
+object DataProvinsi {
+    private val namaKabupaten = arrayOf("Bengkulu",
+        "Bengkulu Selatan",
+        "Bengkulu Tengah",
+        "Bengkulu Utara",
+        "Kaur",
+        "Kepahiang",
+        "Lebong",
+        "Mukomuko",
+        "Rejang Lebong",
+        "Seluma")
+    private val logoKabupaten = intArrayOf(R.drawable.bengkulu,
+        R.drawable.bengkulu_selatan,
+        R.drawable.bengkulu_tengah,
+        R.drawable.bengkulu_utara,
+        R.drawable.kaur,
+        R.drawable.kepahiang,
+        R.drawable.lebong,
+        R.drawable.mukomuko,
+        R.drawable.rejang_lebing,
+        R.drawable.seluma)
+    private val kabDetail = arrayOf("Kota Bengkulu adalah Ibu Kota Provinsi Bengkulu, Indonesia. Kota ini merupakan kota terbesar kedua di pantai barat Pulau Sumatra, setelah Kota Padang. Sebelumnya kawasan ini berada dalam pengaruh kerajaan Inderapura dan kesultanan Banten. Kemudian dikuasai Inggris sebelum diserahkan kepada Belanda. Kota ini juga menjadi tempat pengasingan Bung Karno dalam kurun tahun 1939 - 1942 pada masa pemerintahan Hindia Belanda dan menjadi kota kelahiran salah satu istrinya, Fatmawati. Kota Bengkulu memiliki luas wilayah sebesar 152,00 km²[7] dengan jumlah penduduk pada tahun 2020 sebesar 371.828 jiwa yang terdiri atas 187.655 orang laki-laki dan 184.173 orang perempuan.",
+        "Kabupaten Bengkulu Selatan adalah sebuah kabupaten di Provinsi Bengkulu, Indonesia. Kabupaten Bengkulu Selatan berdiri berdasarkan Keputusan Gubernur Militer Daerah Militer Istimewa Sumatra Selatan pada tanggal 8 Maret 1949 Nomor GB/27/1949 tentang pengangkatan Baksir sebagai Bupati Bengkulu Selatan (sebelumnya bernama kabupaten Manna Kaur 1945–1948 dan kabupaten Seluma Manna Kaur 1948–1949). Pada perkembangan selanjutnya dikuatkan dengan Surat Keputusan Presiden RI tanggal 14 November 1956 dengan Undang-undang Nomor 4 Tahun 1956 (Tambahan Lembaran Negara 109).",
+        "Kabupaten Bengkulu Tengah adalah sebuah kabupaten yang berada di provinsi Bengkulu, Indonesia, dengan ibukota kabupaten ada di kecamatan Karang Tinggi. Kabupaten ini dibentuk berdasarkan Undang-Undang Nomor 24 Tahun 2008 yang merupakan pemekaran dari Kabupaten Bengkulu Utara. Pada tahun 2020, penduduk kabupaten Bengkulu Tengah berjumlah 116.706 jiwa, dengan kepadatan 95 jiwa/km².",
+        "Kabupaten Bengkulu Utara adalah sebuah kabupaten di provinsi Bengkulu, Indonesia. Kabupaten yang terletak di kawasan pesisir Pantai Barat Sumatra dengan ibu kotanya Arga Makmur. Kota Arga Makmur berjarak sekitar 60 km dari Kota Bengkulu. Sebelum dimekarkan, kabupaten Bengkulu Utara memiliki luas 9.585,24 km², di mana wilayah Kabupaten Bengkulu Tengah dan Kabupaten Mukomuko masih menjadi wilayah kabupaten ini. Setelah dimekarkan, Bengkulu Utara memiliki luas wilayah 4.424,60 km². Pada tahun 2020, penduduk kabupaten ini berjumlah 296.523 jiwa, dengan kepadatan 67 jiwa/km².",
+        "Kabupaten Kaur adalah sebuah kabupaten yang berada di provinsi Bengkulu, Indonesia. Terletak sekitar 250 km dari kota Bengkulu, Kaur mempunyai luas sebesar 2.369,00 km² dan dihuni sedikitnya 135.200 jiwa. Masyarakat kabupaten Kaur banyak bekerja di sektor pertanian, perdagangan, perkebunan, dan perikanan. Kabupaten Kaur dibentuk berdasarkan Undang-Undang Nomor 3 Tahun 2003 pada tahun 2003 bersamaan dengan pembentukan kabupaten Seluma dan Mukomuko. Kaur sebelumnya merupakan bagian dari kabupaten Bengkulu Selatan. Pada tahun 2020, penduduk kabupaten ini berjumlah 135.200 jiwa dengan kepadatan 57 jiwa/km².",
+        "Kabupaten Kepahiang adalah kabupaten yang terdapat di Provinsi Bengkulu. Kabupaten ini diresmikan keberadaannya pada 7 Januari 2004 yang sebelumnya merupakan wilayah Kabupaten Rejang Lebong. Mayoritas penduduk Kabupaten Kepahiang adalah suku Rejang. Rejang disebut dengan Hejang oleh suku tersebut. Ibu kota Kabupaten Kepahiang adalah Kepahiang. Secara administratif, daerah ini terbagi menjadi delapan kecamatan dan 91 desa. Pada tahun 2006, jumlah penduduknya mencapai 114.889 jiwa yang terdiri dari pria (57.835 jiwa) dan wanita (57.054 jiwa), dengan tingkat kepadatan penduduk yang mencapai 163 per km2.",
+        "Kabupaten Lebong adalah salah sebuah kabupaten di Provinsi Bengkulu, Indonesia. Kabupaten Lebong beribu kota di Tubei. Kabupaten Lebong dibentuk dari hasil pemekaran Kabupaten Rejang Lebong berdasarkan UU No. 39 Tahun 2003. Kabupaten ini terletak di posisi 105º-108º Bujur Timur dan 02º,65’-03º,60’ Lintang Selatan di sepanjang Bukit Barisan serta terklasifikasi sebagai daerah Bukit Range pada ketinggian 500-1.000 dpl. Secara Administratif Kabupaten Lebong terdiri atas 13 Kecamatan dengan 11 kelurahan dan 100 desa. Luas wilayah keseluruhan 192.424 Ha (belum termasuk luas kecamatan Padang Bano yang masih bersengketa dengan Kabupaten Bengkulu Utara). Dari total tersebut 134.834,55 Ha adalah Kawasan Konservasi dengan peruntukan untuk Kawasan Taman Nasional Kerinci Sebelat 111.035,00 Ha, Hutan Lindung 20.777,40 Ha dan Cagar Alam 3.022,15 Ha. Taman Nasional Kerinci Sebelat (TNKS) yang ditetapkan berdasarkan Surat Keputusan Menteri Pertanian No 736/Mentan/X/1982 kemudian dipekuat berdasarkan SK Menteri Kehutanan dan Perkebunan No 901/kpts-II/1999 sebagai kawasan konservasi dan di wilayah lain juga di kukuhkan sebagai kawasan Hutan Lindung Rimbo Pengadang Register 42 dan kawasan lindung Boven Lais yang awal pengukuhan kawasan ini ditetapkan sebagai hutan lindung oleh Pemerintahan Kolonial Belanda sekitar tahun 1927 yang dikenal sebagai hutan batas Boszwezen (BW)",
+        "Kabupaten Mukomuko terletak pada 101o01’15,1” – 101o51’29,6” Bujur Timur dan pada 02o16’32,0” - 03o07’46,0” Lintang Selatan. Suhu udara kota Mukomuko berkisar antara 21,10 C sampai dengan 34,60 C dengan curah hujan rata-rata 151,2 mm. Secara administratif, Kabupaten Mukomuko ini terbagi menjadi 15 kecamatan, 148 desa, dan 3 kelurahan. Pada tahun 2006 memiliki jumlah penduduk 177.131 jiwa yang terdiri dari 92.120 jiwa pria dan 85.011 jiwa wanita dengan tingkat kepadatan penduduknya sendiri mencapai 43,88 per Km². Sebagian besar penduduk Muko-muko ini merupakan transmigran yang berasal dari Jawa, Sunda, Minang, dan lain sebagainya. Sebab, Bengkulu termasuk mukomuko sejak zaman kolonial Belanda dijadikan \"tanah harapan\" bagi penduduk luar Bengkulu. Dari jumlah itu 37,4 persen suku Jawa, 6,3 persen suku Sunda, 5,4 persen Minang dan sisanya dari Bali, Bugis, Melayu, Rejang, Serawai, Lembak, serta lainnya.Kabupaten Rejang Lebong adalah sebuah kabupaten di provinsi Bengkulu, Indonesia. Kabupaten ini memiliki luas wilayah 1.515,76 km² dan populasi sekitar 257.498 jiwa (2016). Ibu kotanya ialah Curup. Kabupaten ini terletak di lereng pegunungan Bukit Barisan dan berjarak 85 km dari kota Bengkulu yang merupakan ibu kota provinsi. Penduduk asli terdiri dari 2 suku utama yaitu suku Rejang dan suku Lembak. Suku Rejang mendiami tanah atas yaitu kecamatan Curup, Curup Utara, Curup Timur, Curup Selatan, Curup Tengah, Bermani Ulu, Bermani Ulu Raya, dan sebagian Selupu Rejang. Suku Lembak mendiami tanah bawah yaitu kecamatan Kota Padang, Padang Ulak Tanding, Binduriang, Sindang Dataran, Sindang Beliti Ulu, Sindang Beliti Ilir, dan Sindang Kelingi.Prof. Mr. Dr. Soepomo (Ejaan Soewandi: Supomo; lahir di Sukoharjo, Jawa Tengah, 22 Januari 1903 – meninggal di Jakarta, 12 September 1958 pada umur 55 tahun) adalah seorang pahlawan nasional Indonesia. Soepomo dikenal sebagai arsitek Undang-undang Dasar 1945, bersama dengan Muhammad Yamin dan Soekarno.",
+        "Kabupaten Rejang Lebong adalah sebuah kabupaten di provinsi Bengkulu, Indonesia. Kabupaten ini memiliki luas wilayah 1.515,76 km² dan populasi sekitar 257.498 jiwa (2016). Ibu kotanya ialah Curup. Kabupaten ini terletak di lereng pegunungan Bukit Barisan dan berjarak 85 km dari kota Bengkulu yang merupakan ibu kota provinsi. Penduduk asli terdiri dari 2 suku utama yaitu suku Rejang dan suku Lembak. Suku Rejang mendiami tanah atas yaitu kecamatan Curup, Curup Utara, Curup Timur, Curup Selatan, Curup Tengah, Bermani Ulu, Bermani Ulu Raya, dan sebagian Selupu Rejang. Suku Lembak mendiami tanah bawah yaitu kecamatan Kota Padang, Padang Ulak Tanding, Binduriang, Sindang Dataran, Sindang Beliti Ulu, Sindang Beliti Ilir, dan Sindang Kelingi.",
+        "Kabupaten Seluma adalah salah satu kabupaten di Provinsi Bengkulu, Indonesia dengan ibu kotanya Tais, terbentuk berdasarkan UU No. 3, Tahun 2003, penduduknya sekitar 297.876 jiwa dengan komposisi 145.180 jiwa (laki-laki) dan 129.187 jiwa (perempuan). Kabupaten ini merupakan pemekaran dari Kabupaten Bengkulu Selatan. Bahasa yang digunakan adalah bahasa suku Serawai. Dulunya kabupaten ini masuk dalam kabupaten tertinggal sebab berpenduduk sedikit dan belum sama sekali berkembangnya potensi unggulan daerah, tetapi sejak tahun 2008 kabupaten ini bukan lagi kabupaten tertinggal karena padi adalah potensi unggulan kabupaten ini. Sebab itu di setiap Kecamatan kebutuhan padi, beras, dan kebutuhan pangan sudah mencukupi. Selain padi, potensinya juga pada sektor perikanan yang menjadi penghasilan utama masyarakat sekitar yang berada di pinggir pantai seperti kecamatan Pinoraya, Pantai Seluma, Dan lain-lain. Adapun makanan khas kabupaten ini adalah Gulai Remis, Rebung Asam Umbut Lipai Dan lain-lain[4]. Tari adatnya adalah Tari Andun\"[5] Kabupaten ini memiliki tradisi Bimbang Bebalai, yakni suatu upacara terkait dengan perkawinan.")
+
+    val listData: ArrayList<Kabupaten>
+        get() {
+            val list = arrayListOf<Kabupaten>()
+            for (position in namaKabupaten.indices) {
+                val kabupaten = Kabupaten()
+                kabupaten.name = namaKabupaten[position]
+                kabupaten.detail = kabDetail[position]
+                kabupaten.photo = logoKabupaten[position]
+                list.add(kabupaten)
+            }
+            return list
+        }
+}
